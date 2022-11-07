@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="person" class="spring_01_03_05_introduction.introduction_04_05_di.basic_dl.set.bean.Person">
+        <property name="name" value="chengyunlai"></property>
+        <property name="age" value="18"></property>
+    </bean>
+
+    <bean id="cat" class="spring_01_03_05_introduction.introduction_04_05_di.basic_dl.set.bean.Cat">
+        <!--`property` 标签，除了可以声明 `value` 之外，还可以声明另外一个属性：`ref` ，它代表要关联赋值的 Bean 的 id。 由此，对于 cat 中的 master 属性，可以有如下赋值方法-->
+        <property name="master" ref="person"></property>
+    </bean>
+
+
+</beans>
