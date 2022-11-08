@@ -13,7 +13,7 @@ import spring_01_03_05_introduction.introduction_04_05_di.basic_dl.byType.bean.P
  **/
 public class QuickstartByTypeApplication {
     public static void main(String[] args) {
-        BeanFactory factory = new ClassPathXmlApplicationContext("basic_dI/quickstart-bytype.xml");
+        BeanFactory factory = new ClassPathXmlApplicationContext("introduction/quickstart-bytype.xml");
         Person person = factory.getBean(Person.class);
         System.out.println(person);
     }
