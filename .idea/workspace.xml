@@ -9,15 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="Bean工厂改为使用ApplicationContext，了解延迟查找">
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_06/ofType/annotation/bean/Black.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_07/annotation/AnnotationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_07/annotation/bean/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_07/annotation/bean/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_07/annotation/bean/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_07/annotation/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_07/annotation/xmlBean/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/basic/annotation07.xml" afterDir="false" />
+    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="注解驱动 和 组件扫描">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_08/InjectApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_08/bean/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_08/bean/Pink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_08/bean/Rabbit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_08/bean/Red.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_08/config/InjectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/basic/constructor08.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/basic/red08.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,19 +63,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\workSpace\javaSpace\spring\src\main\resources\introduction" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AnnotationApplication">
+  <component name="RunManager" selected="Application.InjectApplication">
     <configuration name="AnnotationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spring_02_06_12_basic.basic_07.annotation.AnnotationApplication" />
       <module name="spring-framework-projects" />
@@ -88,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickstartByNameApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_01_03_05_introduction.introduction_04_05_di.basic_dl.byName.QuickstartByNameApplication" />
+    <configuration name="InjectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring_02_06_12_basic.basic_08.InjectApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_01_03_05_introduction.introduction_04_05_di.basic_dl.byName.*" />
+          <option name="PATTERN" value="spring_02_06_12_basic.basic_08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickstartByTypeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_01_03_05_introduction.introduction_04_05_di.basic_dl.byType.QuickstartByTypeApplication" />
+    <configuration name="QuickstartByNameApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring_01_03_05_introduction.introduction_04_05_di.basic_dl.byName.QuickstartByNameApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_01_03_05_introduction.introduction_04_05_di.basic_dl.byType.*" />
+          <option name="PATTERN" value="spring_01_03_05_introduction.introduction_04_05_di.basic_dl.byName.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,13 +142,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -241,11 +245,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InjectApplication" />
         <item itemvalue="Application.AnnotationApplication" />
         <item itemvalue="Application.ofTypeApplication" />
         <item itemvalue="Application.QuickstartInjectBySetXmlApplication" />
         <item itemvalue="Application.QuickstartByNameApplication" />
-        <item itemvalue="Application.QuickstartByTypeApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +271,8 @@
       <workItem from="1667917154462" duration="185000" />
       <workItem from="1667922796339" duration="161000" />
       <workItem from="1667954405851" duration="674000" />
-      <workItem from="1667962194017" duration="4015000" />
+      <workItem from="1667962194017" duration="5180000" />
+      <workItem from="1667982155164" duration="5782000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring框架的依赖查找和依赖注入">
       <created>1667818139908</created>
@@ -283,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667914433015</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="注解驱动 和 组件扫描">
+      <created>1667975266162</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667975266162</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +316,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="使用Spring框架的依赖查找和依赖注入" />
     <MESSAGE value="Bean工厂改为使用ApplicationContext，了解延迟查找" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bean工厂改为使用ApplicationContext，了解延迟查找" />
+    <MESSAGE value="注解驱动 和 组件扫描" />
+    <option name="LAST_COMMIT_MESSAGE" value="注解驱动 和 组件扫描" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
