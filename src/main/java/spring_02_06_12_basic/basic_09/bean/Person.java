@@ -1,21 +1,21 @@
-package spring_02_06_12_basic.basic_08.bean;
+package spring_02_06_12_basic.basic_09.bean;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 /**
  * @ClassName
- * @Description XML的有参构造
+ * @Description
  * @Author:chengyunlai
  * @Date
  * @Version 1.0
  **/
+@Component
 public class Person {
-    private String name;
-    private Integer age;
-
-
-    public Person(String name, Integer age) {
-        this.name = name;
-        this.age = age;
-    }
+    @Value("chengyunlai")
+    public String name;
+    @Value("18")
+    public Integer age;
 
     @Override
     public String toString() {

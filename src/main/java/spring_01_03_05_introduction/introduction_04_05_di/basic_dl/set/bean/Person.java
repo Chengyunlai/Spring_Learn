@@ -31,7 +31,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "PersonXml{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';

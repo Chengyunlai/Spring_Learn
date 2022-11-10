@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="spring_02_06_12_basic.basic_09.complexInject.PersonXml">
+        <!--数组注入-->
+        <property name="names">
+            <array>
+                <value>王一</value>
+                <value>王二</value>
+            </array>
+        </property>
+        <!--list-->
+        <property name="tels">
+            <list>
+                <value>123</value>
+                <value>456</value>
+            </list>
+        </property>
+        <!--set-->
+        <property name="cats">
+            <set>
+                <bean class="spring_02_06_12_basic.basic_09.complexInject.Cat"></bean>
+            </set>
+        </property>
+        <!--map注入-->
+        <property name="events">
+            <map>
+                <entry key="xiaowang" value="小王"></entry>
+                <entry key="xiaomi">
+                    <bean class="spring_02_06_12_basic.basic_09.complexInject.Cat"></bean>
+                </entry>
+            </map>
+        </property>
+        <!--Map注入-->
+        <property name="props">
+            <props>
+                <prop key="name">chengyunlai</prop>
+                <prop key="age">10</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
