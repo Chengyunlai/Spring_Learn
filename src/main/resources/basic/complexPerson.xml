@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean class="spring_02_06_12_basic.basic_09.complexInject.PersonXml">
+    <bean class="spring_02_06_13_basic.basic_09.complexInject.PersonXml">
         <!--数组注入-->
         <property name="names">
             <array>
@@ -20,7 +20,7 @@
         <!--set-->
         <property name="cats">
             <set>
-                <bean class="spring_02_06_12_basic.basic_09.complexInject.Cat"></bean>
+                <bean class="spring_02_06_13_basic.basic_09.complexInject.Cat"></bean>
             </set>
         </property>
         <!--map注入-->
@@ -28,7 +28,7 @@
             <map>
                 <entry key="xiaowang" value="小王"></entry>
                 <entry key="xiaomi">
-                    <bean class="spring_02_06_12_basic.basic_09.complexInject.Cat"></bean>
+                    <bean class="spring_02_06_13_basic.basic_09.complexInject.Cat"></bean>
                 </entry>
             </map>
         </property>

@@ -2,9 +2,9 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="mysql" class="spring_02_06_12_basic.basic_06.ofType.dao.impl.MysqlDao"></bean>
-    <bean id="oracle" class="spring_02_06_12_basic.basic_06.ofType.dao.impl.OracleDao"></bean>
-    <bean id="black" class="spring_02_06_12_basic.basic_06.ofType.annotation.bean.Black"></bean>
-    <bean id="white" class="spring_02_06_12_basic.basic_06.ofType.annotation.bean.White"></bean>
-    <!--<bean id="pink" class="spring_02_06_12_basic.basic_06.ofType.annotation.bean.Pink"></bean>-->
+    <bean id="mysql" class="spring_02_06_13_basic.basic_06.ofType.dao.impl.MysqlDao"></bean>
+    <bean id="oracle" class="spring_02_06_13_basic.basic_06.ofType.dao.impl.OracleDao"></bean>
+    <bean id="black" class="spring_02_06_13_basic.basic_06.ofType.annotation.bean.Black"></bean>
+    <bean id="white" class="spring_02_06_13_basic.basic_06.ofType.annotation.bean.White"></bean>
+    <!--<bean id="pink" class="spring_02_06_13_basic.basic_06.ofType.annotation.bean.Pink"></bean>-->
 </beans>

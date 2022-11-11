@@ -9,14 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="bean的作用域以及工厂Bean">
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_12/FactoryApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_12/bean/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_12/bean/StaticCat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_12/bean/instanceFactory/InstanceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_12/bean/staticFactory/StaticFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_12/config/FactoryConfig.java" afterDir="false" />
+    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="Bean的实例化方法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_12/FactoryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_12/FactoryApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,11 +70,11 @@
   </component>
   <component name="RunManager" selected="Application.FactoryApplication">
     <configuration name="ApplicationAware" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_02_06_12_basic.basic_10.ApplicationAware" />
+      <option name="MAIN_CLASS_NAME" value="spring_02_06_13_basic.basic_10.ApplicationAware" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_02_06_12_basic.basic_10.*" />
+          <option name="PATTERN" value="spring_02_06_13_basic.basic_10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,11 +83,11 @@
       </method>
     </configuration>
     <configuration name="BeanTypeAnnoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_02_06_12_basic.basic_11.BeanTypeAnnoApplication" />
+      <option name="MAIN_CLASS_NAME" value="spring_02_06_13_basic.basic_11.BeanTypeAnnoApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_02_06_12_basic.basic_11.*" />
+          <option name="PATTERN" value="spring_02_06_13_basic.basic_11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,11 +96,11 @@
       </method>
     </configuration>
     <configuration name="ComplexApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_02_06_12_basic.basic_09.ComplexApplication" />
+      <option name="MAIN_CLASS_NAME" value="spring_02_06_13_basic.basic_09.ComplexApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_02_06_12_basic.basic_09.*" />
+          <option name="PATTERN" value="spring_02_06_13_basic.basic_09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +109,11 @@
       </method>
     </configuration>
     <configuration name="FactoryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_02_06_12_basic.basic_12.FactoryApplication" />
+      <option name="MAIN_CLASS_NAME" value="spring_02_06_13_basic.basic_12.FactoryApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_02_06_12_basic.basic_12.*" />
+          <option name="PATTERN" value="spring_02_06_13_basic.basic_12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,11 +122,11 @@
       </method>
     </configuration>
     <configuration name="InjectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_02_06_12_basic.basic_08.InjectApplication" />
+      <option name="MAIN_CLASS_NAME" value="spring_02_06_13_basic.basic_08.InjectApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_02_06_12_basic.basic_08.*" />
+          <option name="PATTERN" value="spring_02_06_13_basic.basic_08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -270,7 +265,7 @@
       <workItem from="1667982155164" duration="8716000" />
       <workItem from="1668039969848" duration="7647000" />
       <workItem from="1668127599691" duration="25000" />
-      <workItem from="1668134504070" duration="14742000" />
+      <workItem from="1668134504070" duration="14882000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring框架的依赖查找和依赖注入">
       <created>1667818139908</created>
@@ -321,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668169982558</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Bean的实例化方法">
+      <created>1668172345713</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668172345713</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +349,8 @@
     <MESSAGE value="自动注入autoWrite和复杂类型注入" />
     <MESSAGE value="回调注入" />
     <MESSAGE value="bean的作用域以及工厂Bean" />
-    <option name="LAST_COMMIT_MESSAGE" value="bean的作用域以及工厂Bean" />
+    <MESSAGE value="Bean的实例化方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bean的实例化方法" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
