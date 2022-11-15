@@ -9,9 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="Bean的实例化方法">
+    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="文件更新">
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_13_basic/basic_13/InitAndDestoryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_13_basic/basic_13/bean/annotation/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_13_basic/basic_13/bean/byInterface/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_13_basic/basic_13/bean/jsr/Pen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_13_basic/basic_13/bean/xml/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_13_basic/basic_13/config/InitAndDestoryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/basic/iniAndDesFunction13.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_12/FactoryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_02_06_12_basic/basic_12/FactoryApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +74,7 @@
       <recent name="W:\workSpace\javaSpace\spring\src\main\resources\introduction" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FactoryApplication">
+  <component name="RunManager" selected="Application.InitAndDestoryApplication">
     <configuration name="ApplicationAware" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spring_02_06_13_basic.basic_10.ApplicationAware" />
       <module name="spring-framework-projects" />
@@ -121,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InjectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_02_06_13_basic.basic_08.InjectApplication" />
+    <configuration name="InitAndDestoryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring_02_06_13_basic.basic_13.InitAndDestoryApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_02_06_13_basic.basic_08.*" />
+          <option name="PATTERN" value="spring_02_06_13_basic.basic_13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,13 +140,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -235,11 +243,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InitAndDestoryApplication" />
         <item itemvalue="Application.FactoryApplication" />
         <item itemvalue="Application.BeanTypeAnnoApplication" />
         <item itemvalue="Application.ApplicationAware" />
         <item itemvalue="Application.ComplexApplication" />
-        <item itemvalue="Application.InjectApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +273,12 @@
       <workItem from="1667982155164" duration="8716000" />
       <workItem from="1668039969848" duration="7647000" />
       <workItem from="1668127599691" duration="25000" />
-      <workItem from="1668134504070" duration="14882000" />
+      <workItem from="1668134504070" duration="16534000" />
+      <workItem from="1668213286410" duration="52000" />
+      <workItem from="1668392050709" duration="1394000" />
+      <workItem from="1668490725437" duration="1276000" />
+      <workItem from="1668516235776" duration="3225000" />
+      <workItem from="1668525730699" duration="946000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring框架的依赖查找和依赖注入">
       <created>1667818139908</created>
@@ -323,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668172345713</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="文件更新">
+      <created>1668172533302</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668172533302</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +370,8 @@
     <MESSAGE value="回调注入" />
     <MESSAGE value="bean的作用域以及工厂Bean" />
     <MESSAGE value="Bean的实例化方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bean的实例化方法" />
+    <MESSAGE value="文件更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件更新" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
