@@ -15,6 +15,6 @@ import spring_03_14_21_upper.advance_18.config.BarConfiguration;
 public class BarImportSelector implements ImportSelector {
     @Override
     public String[] selectImports(AnnotationMetadata annotationMetadata) {
-        return new String[]{Bar.class.getName(), BarConfiguration.class.getName()};
+        return new String[]{BarConfiguration.class.getName()};
     }
 }

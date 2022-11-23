@@ -9,30 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="自定义事件（但是有其他的替代方案）">
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_17/TavernApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_17/annotation/EnableTavern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_17/bean/Bar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_17/bean/Bartender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_17/bean/Boss.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_17/bean/Waiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_17/config/BarConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_17/config/BartenderConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_17/config/TavernConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_17/importSelector/BarImportSelector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_17/registrar/WaiterRegistrar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/TavernProfileApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/annotation/EnableTavern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/bean/Bar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/bean/Bartender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/bean/Boss.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/bean/Waiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/config/BarConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/config/BartenderConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/config/TavernConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/importSelector/BarImportSelector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/registrar/WaiterRegistrar.java" afterDir="false" />
+    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="什么是模块装配？将每个独立的模块所需要的核心功能组件进行装配&#10;模块装配的核心是什么？通过注解，能快速整合激活相对应的模块。">
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/annotation/ConditionalOnBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/config/dataConfig/DataSourceConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/utils/ExistBossCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/utils/OnBeanCondition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/TavernProfileApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/TavernProfileApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/annotation/EnableTavern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/annotation/EnableTavern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/config/BarConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/config/BarConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/importSelector/BarImportSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/importSelector/BarImportSelector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,9 +134,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TavernProfileApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TavernProfileApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spring_03_14_21_upper.advance_18.TavernProfileApplication" />
       <module name="spring-framework-projects" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=city" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="spring_03_14_21_upper.advance_18.*" />
@@ -161,13 +148,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -260,9 +249,16 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.TavernProfileApplication" />
+      <item itemvalue="Application.ApplicationContext" />
+      <item itemvalue="Application.InitAndDestoryApplication" />
+      <item itemvalue="Application.ListableBeanFactoryApplication" />
+      <item itemvalue="Application.TavernApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TavernProfileApplication" />
         <item itemvalue="Application.TavernApplication" />
         <item itemvalue="Application.ApplicationContext" />
         <item itemvalue="Application.ListableBeanFactoryApplication" />
@@ -303,7 +299,8 @@
       <workItem from="1668949288588" duration="1186000" />
       <workItem from="1669026442849" duration="9462000" />
       <workItem from="1669077313714" duration="1249000" />
-      <workItem from="1669181247612" duration="8186000" />
+      <workItem from="1669181247612" duration="14657000" />
+      <workItem from="1669215450853" duration="1417000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring框架的依赖查找和依赖注入">
       <created>1667818139908</created>
@@ -382,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669040428940</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="什么是模块装配？将每个独立的模块所需要的核心功能组件进行装配&#10;模块装配的核心是什么？通过注解，能快速整合激活相对应的模块。">
+      <created>1669200109289</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669200109289</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +416,8 @@
     <MESSAGE value="文件更新" />
     <MESSAGE value="生命周期的-初始化和销毁" />
     <MESSAGE value="自定义事件（但是有其他的替代方案）" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义事件（但是有其他的替代方案）" />
+    <MESSAGE value="什么是模块装配？将每个独立的模块所需要的核心功能组件进行装配&#10;模块装配的核心是什么？通过注解，能快速整合激活相对应的模块。" />
+    <option name="LAST_COMMIT_MESSAGE" value="什么是模块装配？将每个独立的模块所需要的核心功能组件进行装配&#10;模块装配的核心是什么？通过注解，能快速整合激活相对应的模块。" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

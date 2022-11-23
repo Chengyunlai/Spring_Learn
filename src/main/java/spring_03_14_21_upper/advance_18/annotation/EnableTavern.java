@@ -19,7 +19,8 @@ import java.lang.annotation.*;
 // @Import(Boss.class)
 
 // 它可以导入【配置类】、【ImportSelector 的实现类】，【ImportBeanDefinitionRegistrar 的实现类】，或者【普通类】。
-@Import({Boss.class, BartenderConfiguration.class, BarImportSelector.class, WaiterRegistrar.class})
+// @Import({Boss.class, BartenderConfiguration.class, BarImportSelector.class, WaiterRegistrar.class}) // 注释掉测试去掉Boss后其他的Bean是够不存在
+@Import({BartenderConfiguration.class, BarImportSelector.class, WaiterRegistrar.class})
 public @interface EnableTavern {
 
 }
