@@ -61,7 +61,7 @@ public class BeanFactory {
                         // 反射创建后放入缓存再返回
                         beanMap.put(beanName, bean);
                     } catch (ClassNotFoundException e) {
-                        throw new RuntimeException("BeanFactory have not [" + beanName + "] bean!", e);
+                        throw new RuntimeException("BeanFactory have not [" + beanName + "] DataSource!", e);
                     } catch (IllegalAccessException | InstantiationException e) {
                         throw new RuntimeException("[" + beanName + "] instantiation error!", e);
                     }

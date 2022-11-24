@@ -18,7 +18,7 @@ import spring_03_14_21_upper.advance_19.typefilter.filter.GreenTypeFilter;
 // includeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, value = Animal.class) 意思是，将Animal标注的类放到容器中
 // excludeFilters 将对应条件的bean从容器中排除出去
 @ComponentScan(value = "spring_03_14_21_upper.advance_19.typefilter",
-        includeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Animal.class),@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = Color.class),@ComponentScan.Filter(type = FilterType.REGEX, pattern = "spring_03_14_21_upper.advance_19.typefilter.bean.+Demo.+")},
+        includeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Animal.class),@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = Color.class),@ComponentScan.Filter(type = FilterType.REGEX, pattern = "spring_03_14_21_upper.advance_19.typefilter.DataSource.+Demo.+")},
         excludeFilters = {@ComponentScan.Filter(type = FilterType.CUSTOM,value = GreenTypeFilter.class)}
 )
 public class TypeFilterConfig {

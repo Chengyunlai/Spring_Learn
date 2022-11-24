@@ -13,18 +13,18 @@ import spring_02_06_13_basic.basic_09.complexInject.PersonAnnotation;
 public class ComplexApplication {
 
     public static void main(String[] args) {
-        // AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext("spring_02_06_12_basic.basic_09.bean");
+        // AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext("spring_02_06_12_basic.basic_09.DataSource");
         //
-        // ServiceImpl bean = ctx.getBean(ServiceImpl.class);
-        // bean.getPerson();
+        // ServiceImpl DataSource = ctx.getBean(ServiceImpl.class);
+        // DataSource.getPerson();
 
         // Dao bean1 = ctx.getBean(Dao.class);
         // System.out.println(bean1);
 
         // 复杂注入XML
         // ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("basic/complexPerson.xml");
-        // PersonXml bean = ctx.getBean(PersonXml.class);
-        // System.out.println(bean);
+        // PersonXml DataSource = ctx.getBean(PersonXml.class);
+        // System.out.println(DataSource);
 
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext("spring_02_06_12_basic.basic_09.complexInject");
         PersonAnnotation bean = ctx.getBean(PersonAnnotation.class);

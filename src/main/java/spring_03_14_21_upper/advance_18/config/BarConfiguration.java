@@ -20,7 +20,7 @@ public class BarConfiguration {
 
     // 酒吧的创建有一定的要求@Conditional(写清楚条件) ExistBossCondition是我们的规则类
     // @Conditional(ExistBossCondition.class)
-    // @ConditionalOnBean(beanNames = "spring_03_14_21_upper.advance_18.bean.Boss")
+    // @ConditionalOnBean(beanNames = "spring_03_14_21_upper.advance_18.DataSource.Boss")
     @ConditionalOnBean(Boss.class)
     @Bean
     public Bar barrr(){

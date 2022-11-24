@@ -30,8 +30,8 @@ public class BeanTypeAnnoApplication {
         });
 
         // 工厂本身创建的内容 并不归于Spring容器管理
-        // Ball bean = ctx.getBean(Ball.class);
-        // System.out.println(bean);
+        // Ball DataSource = ctx.getBean(Ball.class);
+        // System.out.println(DataSource);
 
     }
 }
