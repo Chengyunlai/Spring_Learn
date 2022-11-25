@@ -9,11 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="利用注解的方式读取Properties">
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_20/ProtocolResolverApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_20/protocolResolver/DogProtocolResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/advance/Dog.txt" afterDir="false" />
+    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="自定义资源管理">
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_21/PropertySourceXmlApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_21/bean/JdbcXmlProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_21/bean/JdbcYmlProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_21/config/JdbcXmlConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_21/factory/YmlPropertySourceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/advance/jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/advance/jdbc.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +87,7 @@
       <recent name="juejin.properties" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProtocolResolverApplication">
+  <component name="RunManager" selected="Application.PropertySourceXmlApplication">
     <configuration name="BasePackageClassApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spring_03_14_21_upper.advance_19.basepackageclass.BasePackageClassApplication" />
       <module name="spring-framework-projects" />
@@ -109,12 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProtocolResolverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_03_14_21_upper.advance_20.ProtocolResolverApplication" />
+    <configuration name="PropertySourceXmlApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring_03_14_21_upper.advance_21.PropertySourceXmlApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_03_14_21_upper.advance_20.*" />
+          <option name="PATTERN" value="spring_03_14_21_upper.advance_21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TavernApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_03_14_21_upper.advance_17.TavernApplication" />
+    <configuration name="ProtocolResolverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring_03_14_21_upper.advance_20.ProtocolResolverApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_03_14_21_upper.advance_17.*" />
+          <option name="PATTERN" value="spring_03_14_21_upper.advance_20.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -265,20 +270,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.TavernProfileApplication" />
-      <item itemvalue="Application.TavernApplication" />
       <item itemvalue="Application.BasePackageClassApplication" />
       <item itemvalue="Application.TypeFilterApplication" />
       <item itemvalue="Application.PropertiesAnnotationApplication" />
       <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
       <item itemvalue="Application.ProtocolResolverApplication" />
+      <item itemvalue="Application.PropertySourceXmlApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PropertySourceXmlApplication" />
         <item itemvalue="Application.ProtocolResolverApplication" />
         <item itemvalue="Application.PropertiesAnnotationApplication" />
         <item itemvalue="Application.TypeFilterApplication" />
         <item itemvalue="Application.BasePackageClassApplication" />
-        <item itemvalue="Application.TavernApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +326,7 @@
       <workItem from="1669251377986" duration="576000" />
       <workItem from="1669273739250" duration="10490000" />
       <workItem from="1669303450223" duration="2384000" />
-      <workItem from="1669339311469" duration="2119000" />
+      <workItem from="1669339311469" duration="4517000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring框架的依赖查找和依赖注入">
       <created>1667818139908</created>
@@ -428,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669305957090</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="自定义资源管理">
+      <created>1669352424169</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669352424169</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +474,8 @@
     <MESSAGE value="条件装配" />
     <MESSAGE value="组件扫描高级" />
     <MESSAGE value="利用注解的方式读取Properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="利用注解的方式读取Properties" />
+    <MESSAGE value="自定义资源管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义资源管理" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

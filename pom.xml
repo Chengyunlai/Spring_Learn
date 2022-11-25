@@ -37,6 +37,12 @@
         </dependency>
         <!--4.Spring的DI的使用-->
 
+        <!--Spring解析YML-->
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.26</version>
+        </dependency>
     </dependencies>
 
     <!--当然，为了使工程的编译级别在 1.8 级别，还需要加入 Maven 的编译插件：（版本不要太老就好，此处我选用 3.2 版本）-->
