@@ -3,6 +3,16 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="person" class="spring_04_22_31_expert.expert_25.bean.Person">
+        <property name="name" value="老王"></property>
         <property name="sex" value="male"></property>
+    </bean>
+
+    <bean id="cat" class="spring_04_22_31_expert.expert_25.bean.Cat" parent="abstract-animal">
+        <property name="person" ref="person"/>
+        <property name="name" value="咪咪"/>
+    </bean>
+
+    <bean id="abstract-animal" class="spring_04_22_31_expert.expert_25.bean.Animal" abstract="true">
+        <property name="person" ref="person"/>
     </bean>
 </beans>

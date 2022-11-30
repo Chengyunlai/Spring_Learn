@@ -10,7 +10,7 @@ import spring_04_22_31_expert.expert_25.bean.Person;
 
 /**
  * @ClassName
- * @Description
+ * @Description BeanPostProcessor 是一个回调机制的扩展点，它的核心工作点是在 bean 的初始化前后做一些额外的处理（预初始化 bean 的属性值、注入特定的依赖，甚至扩展生成代理对象等）。
  * @Author:chengyunlai
  * @Date
  * @Version 1.0

@@ -1,6 +1,8 @@
 package spring_04_22_31_expert.expert_25;
 
+import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import spring_04_22_31_expert.expert_25.bean.Cat;
 import spring_04_22_31_expert.expert_25.bean.Person;
 import spring_04_22_31_expert.expert_25.config.BeanDefinitionRegistryConfiguration;
 
@@ -18,6 +20,12 @@ public class BeanDefinitionRegistryApplication {
         for (String beanDefinitionName : beanDefinitionNames) {
             System.out.println(beanDefinitionName);
         }
+        System.out.println("--");
+        Cat cat = (Cat) ctx.getBean("cat");
+        System.out.println(cat);
+
+        BeanDefinition catDefinition = ctx.getBeanFactory().getMergedBeanDefinition("cat");
+        System.out.println(catDefinition);
         // Person person = ctx.getBean(Person.class);
         // Person wangwu = (Person) ctx.getBean("wangwu");
         // System.out.println(wangwu);

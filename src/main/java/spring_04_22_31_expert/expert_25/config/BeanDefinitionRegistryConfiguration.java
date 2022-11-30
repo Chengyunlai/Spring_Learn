@@ -12,7 +12,7 @@ import spring_04_22_31_expert.expert_25.postProcessor.RemoveBeanDefinitionPostPr
  * @Version 1.0
  **/
 @Configuration
-@Import(RemoveBeanDefinitionPostProcessor.class)
+// @Import(RemoveBeanDefinitionPostProcessor.class)
 // @ComponentScan("spring_04_22_31_expert.expert_25.bean")
 @ImportResource("expert/postProcessor.xml")
 public class BeanDefinitionRegistryConfiguration {
