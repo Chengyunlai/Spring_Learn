@@ -13,7 +13,7 @@ import java.util.List;
  * @Date
  * @Version 1.0
  **/
-public class DemoServiceImpl2 implements DemoService {
+public class DemoServiceImpl2 extends AbstractDemoService implements DemoService {
 
     // private DemoDao demoDao = new DemoDaoImpl();
 
@@ -23,6 +23,11 @@ public class DemoServiceImpl2 implements DemoService {
     @Override
     public List<String> findAll() {
         return demoDao.findAll();
+    }
+
+    @Override
+    protected int doAdd(String userId, int points) {
+        return 0;
     }
 
     @Override

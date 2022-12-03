@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * @ClassName
- * @Description
+ * @Description 装饰者模式
  * @Author:chengyunlai
  * @Date
  * @Version 1.0

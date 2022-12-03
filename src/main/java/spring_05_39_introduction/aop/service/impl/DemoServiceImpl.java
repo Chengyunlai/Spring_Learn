@@ -3,7 +3,6 @@ package spring_05_39_introduction.aop.service.impl;
 import spring_05_39_introduction.aop.dao.DemoDao;
 import spring_05_39_introduction.aop.factor.BeanFactory;
 import spring_05_39_introduction.aop.service.DemoService;
-import spring_05_39_introduction.aop.utils.LogUtils;
 
 import java.util.List;
 
@@ -32,7 +31,7 @@ public class DemoServiceImpl implements DemoService {
     public int add(String userId, int points) {
         // System.out.println("DemoServiceImpl add ...");
         // System.out.println("user: " + userId + ", points: " + points);
-        LogUtils.printLog("DemoServiceImpl", "add", userId, points);
+        // LogUtils.printLog("DemoServiceImpl", "add", userId, points);
         return points;
     }
 
@@ -40,7 +39,7 @@ public class DemoServiceImpl implements DemoService {
     public int subtract(String userId, int points) {
         // System.out.println("DemoServiceImpl subtract ...");
         // System.out.println("user: " + userId + ", points: " + points);
-        LogUtils.printLog("DemoServiceImpl", "subtract", userId, points);
+        // LogUtils.printLog("DemoServiceImpl", "subtract", userId, points);
         return points;
     }
 
@@ -48,7 +47,7 @@ public class DemoServiceImpl implements DemoService {
     public int multiply(String userId, int points) {
         // System.out.println("DemoServiceImpl multiply ...");
         // System.out.println("user: " + userId + ", points: " + points);
-        LogUtils.printLog("DemoServiceImpl", "multiply", userId, points);
+        // LogUtils.printLog("DemoServiceImpl", "multiply", userId, points);
         return points;
     }
 
@@ -56,7 +55,7 @@ public class DemoServiceImpl implements DemoService {
     public int divide(String userId, int points) {
         // System.out.println("DemoServiceImpl divide ...");
         // System.out.println("user: " + userId + ", points: " + points);
-        LogUtils.printLog("DemoServiceImpl", "divide", userId, points);
+        // LogUtils.printLog("DemoServiceImpl", "divide", userId, points);
         return points;
     }
 }

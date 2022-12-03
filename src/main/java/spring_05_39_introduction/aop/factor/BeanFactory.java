@@ -3,6 +3,9 @@ package spring_05_39_introduction.aop.factor;
 import spring_05_39_introduction.aop.dao.DemoDao;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -57,12 +60,34 @@ public class BeanFactory {
                     try {
                         Class<?> beanClazz = Class.forName(properties.getProperty(beanName));
                         Object bean = beanClazz.newInstance();
+                        // 做动态代理加强
+                        // 检查properties中是否有定义代理增强
+                        // String proxyAdvisorClassName = properties.getProperty(beanName + ".proxy.class");
+                        // System.out.println(proxyAdvisorClassName);
+                        // if (proxyAdvisorClassName != null && proxyAdvisorClassName.trim().length() > 0) {
+                        //     // 获得代理的加强类
+                        //     Class<?> proxyAdvisorClass = Class.forName(proxyAdvisorClassName);
+                        //     // 以及需要被加强的方法
+                        //     String[] methods = properties.getProperty(beanName + ".proxy.methods").split(",");
+                        //     // 要求InvocationHandler的实现类必须声明两参数构造方法
+                        //     // 其中第一个参数是被代理的目标对象，第二个参数是要增强的方法列表
+                        //     // getConstructors()[0]是获得第一个构造器方法
+                        //     InvocationHandler proxyHandler = (InvocationHandler) proxyAdvisorClass
+                        //             .getConstructors()[0].newInstance(bean, methods);
+                        //     // 动态代理创建对象
+                        //     Object proxy = Proxy.newProxyInstance(bean.getClass().getClassLoader(),
+                        //             bean.getClass().getInterfaces(), proxyHandler);
+                        //     bean = proxy;
+                        //     // 经过该步骤后，放入beanMap的对象就是已经被增强过的代理对象
+                        // }
                         // 反射创建后放入缓存再返回
                         beanMap.put(beanName, bean);
                     } catch (ClassNotFoundException e) {
                         throw new RuntimeException("BeanFactory have not [" + beanName + "] DataSource!", e);
                     } catch (IllegalAccessException | InstantiationException e) {
                         throw new RuntimeException("[" + beanName + "] instantiation error!", e);
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
                 }
             }
