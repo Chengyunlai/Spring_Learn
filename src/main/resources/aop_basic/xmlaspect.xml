@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/aop
+                           https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="financeService" class="spring_06_40_43_basic.basic_42.service.FinanceService"></bean>
+
+    <bean id="orderService" class="spring_06_40_43_basic.basic_42.inter.impl.OrderServiceImpl"></bean>
+
+    <bean id="logger" class="spring_06_40_43_basic.basic_42.logger.Logger"></bean>
+    <aop:config>
+        <!--一个 aspect 就是一个切面，id 随便起，只要是全局唯一即可；ref 跟 IOC 部分提到的 ref 一样，
+        都是引用容器中的某个 bean ，这里咱要使用 Logger 作为切面类，所以 ref 就引用 logger 这个 bean 。-->
+        <aop:aspect id="loggerAspect" ref="logger">
+            <aop:before method="beforePrint"
+                        pointcut="execution(public void spring_06_40_43_basic.basic_42.service.FinanceService.addMoney(double))"></aop:before>
+            <aop:after method="afterPrint"
+                        pointcut="execution(public * spring_06_40_43_basic.basic_42.service.FinanceService.* (..)) throws java.lang.Exception"></aop:after>
+            <aop:after-returning method="afterReturningPrint"
+                                 pointcut="execution(public * spring_06_40_43_basic.basic_42.*.*.* (*))"></aop:after-returning>
+        </aop:aspect>
+    </aop:config>
+</beans>

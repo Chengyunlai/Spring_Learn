@@ -43,12 +43,25 @@
             <artifactId>snakeyaml</artifactId>
             <version>1.26</version>
         </dependency>
-        <!--AOP-->
+        <!--AOP cglib实现-->
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
             <version>3.1</version>
         </dependency>
+        <!--Spring的context已经为我们提供了aop-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>5.2.8.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.1</version>
+        </dependency>
+
     </dependencies>
 
     <!--当然，为了使工程的编译级别在 1.8 级别，还需要加入 Maven 的编译插件：（版本不要太老就好，此处我选用 3.2 版本）-->
