@@ -9,20 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="基于XML的方式学习Spring-AOP的使用">
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/aopXml/AopXmlApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/aopXml/bean/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/aopXml/utils/TimePrint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_43/aop/anno/AnnotationAspectJApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_43/aop/anno/annotation/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_43/aop/anno/config/AspectJAOPConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_43/aop/anno/service/FinanceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_43/aop/anno/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_43/aop/anno/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_43/aop/anno/utils/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/juejin/aopXml/xmlAop.xml" afterDir="false" />
+    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="使用注解的方式了解Spring-Aop;&#10;掘金:使用XML的方式配置Spring-Aop">
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_44/proceedingJoinPoint/JoinPointApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_44/proceedingJoinPoint/bean/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_44/proceedingJoinPoint/config/JoinPointConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_44/proceedingJoinPoint/ustils/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_44/proceedingJoinPoint/ustils/TransactionAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_44/proceedingJoinPoint/ustils/UserServiceAop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/aop_basic/xmlaspect.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/aop_basic/xmlaspect.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_43/aop/anno/AnnotationAspectJApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_43/aop/anno/AnnotationAspectJApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +98,7 @@
       <recent name="spring_05_39_introduction.aop.dao.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AopXmlApplication">
+  <component name="RunManager" selected="Application.JoinPointApplication">
     <configuration name="AnnotationAspectJApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spring_06_40_43_basic.basic_43.aop.anno.AnnotationAspectJApplication" />
       <module name="spring-framework-projects" />
@@ -143,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_06_40_43_basic.basic_40.Client" />
+    <configuration name="JoinPointApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring_06_40_43_basic.basic_44.proceedingJoinPoint.JoinPointApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_06_40_43_basic.basic_40.*" />
+          <option name="PATTERN" value="spring_06_40_43_basic.basic_44.proceedingJoinPoint.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -284,20 +279,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.TavernProfileApplication" />
-      <item itemvalue="Application.Client" />
       <item itemvalue="Application.Client (1)" />
-      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
       <item itemvalue="Application.XmlAspectApplication" />
       <item itemvalue="Application.AnnotationAspectJApplication" />
       <item itemvalue="Application.AopXmlApplication" />
+      <item itemvalue="Application.JoinPointApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AopXmlApplication" />
+        <item itemvalue="Application.JoinPointApplication" />
         <item itemvalue="Application.AnnotationAspectJApplication" />
+        <item itemvalue="Application.AopXmlApplication" />
         <item itemvalue="Application.XmlAspectApplication" />
         <item itemvalue="Application.Client (1)" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -359,7 +354,9 @@
       <workItem from="1669989693160" duration="993000" />
       <workItem from="1670044880864" duration="9796000" />
       <workItem from="1670082340188" duration="635000" />
-      <workItem from="1670123440684" duration="18075000" />
+      <workItem from="1670123440684" duration="20430000" />
+      <workItem from="1670206654931" duration="3008000" />
+      <workItem from="1670230100364" duration="2831000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring框架的依赖查找和依赖注入">
       <created>1667818139908</created>
@@ -515,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670142887252</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="使用注解的方式了解Spring-Aop;&#10;掘金:使用XML的方式配置Spring-Aop">
+      <created>1670160663942</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1670160663942</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +560,8 @@
     <MESSAGE value="Spring的生命周期相关内容；掘金的事件监听" />
     <MESSAGE value="Spring的AOP入门" />
     <MESSAGE value="基于XML的方式学习Spring-AOP的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="基于XML的方式学习Spring-AOP的使用" />
+    <MESSAGE value="使用注解的方式了解Spring-Aop;&#10;掘金:使用XML的方式配置Spring-Aop" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用注解的方式了解Spring-Aop;&#10;掘金:使用XML的方式配置Spring-Aop" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
