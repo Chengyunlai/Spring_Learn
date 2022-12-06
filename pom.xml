@@ -11,6 +11,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <spring.framework.version>5.2.8.RELEASE</spring.framework.version>
     </properties>
     <!--3.入门-IOC是怎么来的-->
     <dependencies>
@@ -69,6 +70,19 @@
             <version>5.1.47</version>
         </dependency>
 
+        <!--JDBC框架-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+
+        <!--必须-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
+        </dependency>
     </dependencies>
 
     <!--当然，为了使工程的编译级别在 1.8 级别，还需要加入 Maven 的编译插件：（版本不要太老就好，此处我选用 3.2 版本）-->
