@@ -1,8 +1,6 @@
 package spring_06_40_43_basic.basic_44.proceedingJoinPoint.ustils;
 
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.*;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
@@ -23,7 +21,7 @@ public class LogAspect {
         System.out.println("LogAspect 打印日志 ......");
     }
 
-    @After("execution(public void spring_06_40_43_basic.basic_44.proceedingJoinPoint.bean.UserService.* (..))")
+    @Around("execution(public void spring_06_40_43_basic.basic_44.proceedingJoinPoint.bean.UserService.* (..))")
     public void aaa(){
         System.out.println("aaa");
     }
