@@ -9,14 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="使用过AOP写一个原生的SQL事务">
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_53/anno/JdbcAnnotationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_53/anno/config/JdbcTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_53/quickstart/JdbcTemplateQuickstartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_53/xml/JdbcTemplateXmlApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.xml" afterDir="false" />
+    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="使用Spring整合JDBC">
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_53/anno/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_53/anno/JdbcAnnotationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_53/anno/JdbcAnnotationApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +29,7 @@
         <option value="Interface" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -68,6 +67,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/juejin/aopAnnotation" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -88,8 +89,14 @@
       <recent name="W:\workSpace\javaSpace\spring\src\main\resources\juejin\properties" />
       <recent name="W:\workSpace\javaSpace\spring\src\main\resources\introduction" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="juejin.properties" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="spring_08_53_66_jdbc.jdbc_53.anno.bean" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="spring_06_40_43_basic.basic_40_cglib" />
@@ -360,7 +367,7 @@
       <workItem from="1670123440684" duration="20430000" />
       <workItem from="1670206654931" duration="3008000" />
       <workItem from="1670230100364" duration="6909000" />
-      <workItem from="1670291660546" duration="6877000" />
+      <workItem from="1670291660546" duration="8663000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring框架的依赖查找和依赖注入">
       <created>1667818139908</created>
@@ -537,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670294909985</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="使用Spring整合JDBC">
+      <created>1670306568760</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1670306568760</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +570,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="使用Spring框架的依赖查找和依赖注入" />
     <MESSAGE value="Bean工厂改为使用ApplicationContext，了解延迟查找" />
     <MESSAGE value="注解驱动 和 组件扫描" />
     <MESSAGE value="构造器注入、属性注入（注解的值注入）、外部文件属性注入" />
@@ -581,7 +594,8 @@
     <MESSAGE value="使用注解的方式了解Spring-Aop;&#10;掘金:使用XML的方式配置Spring-Aop" />
     <MESSAGE value="AOP的参数、方法名的获取；不同切面的执行顺序；获取有返回类型的方法的返回值以及异常值；代理对象调用自身的方法多次调用强化的方法" />
     <MESSAGE value="使用过AOP写一个原生的SQL事务" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用过AOP写一个原生的SQL事务" />
+    <MESSAGE value="使用Spring整合JDBC" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用Spring整合JDBC" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
