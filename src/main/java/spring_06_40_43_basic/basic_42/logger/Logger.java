@@ -1,5 +1,7 @@
 package spring_06_40_43_basic.basic_42.logger;
 
+import org.aspectj.lang.ProceedingJoinPoint;
+
 /**
  * @ClassName
  * @Description
@@ -13,7 +15,7 @@ public class Logger {
         System.out.println("Logger beforePrint run ......");
     }
 
-    public void afterPrint() {
+    public Object afterPrint(ProceedingJoinPoint pjp) {
         System.out.println("切面的after方法");
         System.out.println("Logger afterPrint run ......");
     }

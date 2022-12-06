@@ -21,9 +21,10 @@
             <aop:before method="beforePrint"
                         pointcut-ref="defaultPointcut"></aop:before>
             <aop:after method="afterPrint"
-                        pointcut="execution(public * spring_06_40_43_basic.basic_42.service.FinanceService.* (..)) throws java.lang.Exception"></aop:after>
+                        pointcut="execution(public * spring_06_40_43_basic.basic_42.service.FinanceService.* (String,Integer)) throws java.lang.Exception"></aop:after>
             <aop:after-returning method="afterReturningPrint"
                                  pointcut="execution(public * spring_06_40_43_basic.basic_42.*.*.* (*))"></aop:after-returning>
+
         </aop:aspect>
     </aop:config>
 </beans>

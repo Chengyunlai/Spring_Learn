@@ -3,6 +3,7 @@ package spring_07_45_47_upper.aop;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 import spring_07_45_47_upper.utils.JdbcUtils;
 
@@ -17,6 +18,7 @@ import java.sql.Connection;
  **/
 @Component
 @Aspect
+
 public class TransactionAspect {
     @Around("@annotation(spring_07_45_47_upper.anno.Transactional)")
     public Object doWithTransaction(ProceedingJoinPoint joinPoint) throws Throwable {
