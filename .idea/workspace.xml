@@ -9,24 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="了解增删改查">
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_54/JdbcTemplateDaoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_54/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_54/config/JdbcTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_54/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_54/dao/baseDao/BaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_54/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_54/dao/impl/UserDaoImpl2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_55/ProgrammaticTransactionApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_55/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_55/config/TransactionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_55/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_55/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc/Transaction.xml" afterDir="false" />
+    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="编程式事务的学习（重要）">
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/jdbc/anno/JdbcAnnotationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/jdbc/anno/config/JdbcAnnotationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/jdbc/xml/JdbcXmlApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/jdbc/xml/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/jdbc/xml/dao/base/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/jdbc/xml/dao/impl/AccountDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/jdbc/xml/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/juejin/jdbcApo/jdbc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/bean/Bartender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_03_14_21_upper/advance_18/bean/Bartender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_42/logger/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_06_40_43_basic/basic_42/logger/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_07_45_47_upper/aop/TransactionAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_07_45_47_upper/aop/TransactionAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/aop_basic/xmlaspect.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/aop_basic/xmlaspect.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +34,9 @@
       <list>
         <option value="AnnotationType" />
         <option value="Mapper" />
-        <option value="Interface" />
         <option value="JUnit4 Test Class" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -118,7 +114,20 @@
       <recent name="spring_05_39_introduction.aop.factor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProgrammaticTransactionApplication">
+  <component name="RunManager" selected="Application.JdbcXmlApplication">
+    <configuration name="JdbcAnnotationApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="juejin.jdbc.anno.JdbcAnnotationApplication" />
+      <module name="spring-framework-projects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="juejin.jdbc.anno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JdbcAnnotationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spring_08_53_66_jdbc.jdbc_53.anno.JdbcAnnotationApplication" />
       <module name="spring-framework-projects" />
@@ -145,25 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateQuickstartApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_08_53_66_jdbc.jdbc_53.quickstart.JdbcTemplateQuickstartApplication" />
+    <configuration name="JdbcXmlApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="juejin.jdbc.xml.JdbcXmlApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_08_53_66_jdbc.jdbc_53.quickstart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JdbcTemplateXmlApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_08_53_66_jdbc.jdbc_53.xml.JdbcTemplateXmlApplication" />
-      <module name="spring-framework-projects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spring_08_53_66_jdbc.jdbc_53.xml.*" />
+          <option name="PATTERN" value="juejin.jdbc.xml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -299,20 +295,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.TavernProfileApplication" />
-      <item itemvalue="Application.JdbcTemplateQuickstartApplication" />
-      <item itemvalue="Application.JdbcTemplateXmlApplication" />
       <item itemvalue="Application.JdbcAnnotationApplication" />
       <item itemvalue="Application.JdbcTemplateDaoApplication" />
-      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
       <item itemvalue="Application.ProgrammaticTransactionApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
+      <item itemvalue="Application.JdbcXmlApplication" />
+      <item itemvalue="Application.JdbcAnnotationApplication (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JdbcXmlApplication" />
+        <item itemvalue="Application.JdbcAnnotationApplication (1)" />
         <item itemvalue="Application.ProgrammaticTransactionApplication" />
         <item itemvalue="Application.JdbcTemplateDaoApplication" />
         <item itemvalue="Application.JdbcAnnotationApplication" />
-        <item itemvalue="Application.JdbcTemplateXmlApplication" />
-        <item itemvalue="Application.JdbcTemplateQuickstartApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -378,7 +374,9 @@
       <workItem from="1670206654931" duration="3008000" />
       <workItem from="1670230100364" duration="6909000" />
       <workItem from="1670291660546" duration="12878000" />
-      <workItem from="1670316771013" duration="7643000" />
+      <workItem from="1670316771013" duration="8264000" />
+      <workItem from="1670333715624" duration="24000" />
+      <workItem from="1670411705966" duration="8038000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring框架的依赖查找和依赖注入">
       <created>1667818139908</created>
@@ -569,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670308519582</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="编程式事务的学习（重要）">
+      <created>1670333029886</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1670333029886</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +593,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="注解驱动 和 组件扫描" />
     <MESSAGE value="构造器注入、属性注入（注解的值注入）、外部文件属性注入" />
     <MESSAGE value="自动注入autoWrite和复杂类型注入" />
     <MESSAGE value="回调注入" />
@@ -613,7 +617,8 @@
     <MESSAGE value="使用过AOP写一个原生的SQL事务" />
     <MESSAGE value="使用Spring整合JDBC" />
     <MESSAGE value="了解增删改查" />
-    <option name="LAST_COMMIT_MESSAGE" value="了解增删改查" />
+    <MESSAGE value="编程式事务的学习（重要）" />
+    <option name="LAST_COMMIT_MESSAGE" value="编程式事务的学习（重要）" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

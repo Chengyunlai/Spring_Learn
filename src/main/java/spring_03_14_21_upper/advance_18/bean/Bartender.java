@@ -1,5 +1,8 @@
 package spring_03_14_21_upper.advance_18.bean;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+
 /**
  * @ClassName
  * @Description

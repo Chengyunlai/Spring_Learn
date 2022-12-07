@@ -63,13 +63,6 @@
             <version>1.9.1</version>
         </dependency>
 
-        <!--mysql依赖-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.47</version>
-        </dependency>
-
         <!--JDBC框架-->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -77,6 +70,7 @@
             <version>${spring.framework.version}</version>
         </dependency>
 
+        <!--mysql依赖-->
         <!--必须-->
         <dependency>
             <groupId>mysql</groupId>

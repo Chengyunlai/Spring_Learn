@@ -15,9 +15,10 @@ public class Logger {
         System.out.println("Logger beforePrint run ......");
     }
 
-    public Object afterPrint(ProceedingJoinPoint pjp) {
+    public Object afterPrint(ProceedingJoinPoint pjp) throws Throwable {
         System.out.println("切面的after方法");
         System.out.println("Logger afterPrint run ......");
+        return pjp.proceed();
     }
 
     public void afterReturningPrint() {
