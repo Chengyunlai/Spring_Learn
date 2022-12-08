@@ -1,10 +1,9 @@
 package juejin.jdbc.anno;
 
 import juejin.jdbc.anno.config.JdbcAnnotationConfig;
+import juejin.jdbc.anno.service.AccountService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
-import java.sql.Connection;
 import java.sql.SQLException;
 
 /**
@@ -17,8 +16,7 @@ import java.sql.SQLException;
 public class JdbcAnnotationApplication {
     public static void main(String[] args) throws SQLException {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(JdbcAnnotationConfig.class);
-        DriverManagerDataSource bean = ctx.getBean(DriverManagerDataSource.class);
-        Connection connection = bean.getConnection();
-        System.out.println(connection);
+        AccountService service = ctx.getBean(AccountService.class);
+        service.deal();
     }
 }
