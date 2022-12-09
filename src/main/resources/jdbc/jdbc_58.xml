@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/juejin_sql?&amp;useSSL=false"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="root"></property>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <bean id="pointService" class="spring_08_53_66_jdbc.jdbc_58.service.PointService"></bean>
+
+    <bean id="userService" class="spring_08_53_66_jdbc.jdbc_58.service.UserService"></bean>
+
+    <context:annotation-config/>
+
+    <tx:advice id="transactionAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!-- 记得改方法名 -->
+            <tx:method name="register" propagation="REQUIRED"/>
+            <tx:method name="addPoint" propagation="NEVER"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <!-- 记得改包名 -->
+        <aop:advisor advice-ref="transactionAdvice"
+                     pointcut="execution(public * spring_08_53_66_jdbc.jdbc_58.service..* (..))"/>
+    </aop:config>
+
+</beans>
