@@ -2,22 +2,25 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="spring-framework-projects:war exploded" />
+      <artifact name="spring-web:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="掘金事务传播">
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_61/TransactionListenerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_61/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_61/config/TransactionListenerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_61/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_61/listen/UserTransactionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_61/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="事务监听器@TransactionalEventListener">
+      <change afterPath="$PROJECT_DIR$/spring-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web/spring-web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web/src/main/java/springmvc_67/config/UserConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web/src/main/java/springmvc_67/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web/src/main/java/springmvc_67/servlet/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web/src/main/java/springmvc_67/utils/DemoWebApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web/src/main/resources/springmvc_67/spring-web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +31,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Mapper" />
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
+        <option value="Mapper" />
         <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
@@ -73,9 +76,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_58/anno" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.28490353" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.11377778" />
+    <property name="project.structure.side.proportion" value="0.22320819" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
@@ -90,6 +93,9 @@
       <recent name="W:\workSpace\javaSpace\spring\src\main\java\spring_05_39_introduction\aop" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\workSpace\javaSpace\spring\spring-web\src\main\resources\springmvc_67" />
+      <recent name="W:\workSpace\javaSpace\spring\spring-web\src\main\webapp" />
+      <recent name="W:\workSpace\javaSpace\spring\spring-web\src\main\resources" />
       <recent name="W:\workSpace\javaSpace\spring\src\main\resources\juejin\properties" />
       <recent name="W:\workSpace\javaSpace\spring\src\main\resources\introduction" />
     </key>
@@ -110,7 +116,7 @@
       <recent name="spring_05_39_introduction.aop.factor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TransactionListenerApplication">
+  <component name="RunManager" selected="Tomcat Server.springMVC">
     <configuration name="JdbcAnnotationApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="juejin.jdbc.anno.JdbcAnnotationApplication" />
       <module name="spring-framework-projects" />
@@ -204,12 +210,100 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.0.50" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.50" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/spring_framework_projects_war_exploded/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/spring_web_war_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="spring-framework-projects:war exploded">
+        <artifact name="spring-web:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/spring_framework_projects_war_exploded" />
+            <option name="CONTEXT_PATH" value="/spring_web_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="a6f8e507-7a73-43f6-bcd4-47ef7b516d09" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="11167" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="spring-web:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="springMVC" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.50" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="spring-web:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/spring_web" />
           </settings>
         </artifact>
       </deployment>
@@ -287,7 +381,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="spring-framework-projects:war exploded" />
+          <artifact name="spring-web:war exploded" />
         </option>
       </method>
     </configuration>
@@ -297,8 +391,9 @@
       <item itemvalue="Application.PropagationApplication" />
       <item itemvalue="Application.PropagationAnnApplication" />
       <item itemvalue="Application.PropagationApplication (1)" />
-      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
       <item itemvalue="Application.TransactionListenerApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
+      <item itemvalue="Tomcat Server.springMVC" />
     </list>
     <recent_temporary>
       <list>
@@ -377,7 +472,7 @@
       <workItem from="1670411705966" duration="8754000" />
       <workItem from="1670485851270" duration="6623000" />
       <workItem from="1670574691237" duration="11210000" />
-      <workItem from="1670635569969" duration="3167000" />
+      <workItem from="1670635569969" duration="14219000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring框架的依赖查找和依赖注入">
       <created>1667818139908</created>
@@ -603,7 +698,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670594146860</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="事务监听器@TransactionalEventListener">
+      <created>1670660270972</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1670660270972</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +724,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Bean的实例化方法" />
     <MESSAGE value="文件更新" />
     <MESSAGE value="生命周期的-初始化和销毁" />
     <MESSAGE value="自定义事件（但是有其他的替代方案）" />
@@ -647,7 +748,8 @@
     <MESSAGE value="Spring操作事务" />
     <MESSAGE value="事务传播（多个Service中都有事务）" />
     <MESSAGE value="掘金事务传播" />
-    <option name="LAST_COMMIT_MESSAGE" value="掘金事务传播" />
+    <MESSAGE value="事务监听器@TransactionalEventListener" />
+    <option name="LAST_COMMIT_MESSAGE" value="事务监听器@TransactionalEventListener" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
