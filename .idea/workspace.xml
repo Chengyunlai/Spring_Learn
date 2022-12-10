@@ -9,13 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="事务传播（多个Service中都有事务）">
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/propagation/PropagationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/propagation/config/PropagationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/propagation/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/propagation/dao/PayDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/propagation/service/OrdersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/propagation/service/PayingService.java" afterDir="false" />
+    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="掘金事务传播">
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_61/TransactionListenerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_61/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_61/config/TransactionListenerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_61/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_61/listen/UserTransactionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_08_53_66_jdbc/jdbc_61/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,20 +110,7 @@
       <recent name="spring_05_39_introduction.aop.factor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PropagationApplication (1)">
-    <configuration name="DeclarativeTransactionApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_08_53_66_jdbc.jdbc_57.DeclarativeTransactionApplication" />
-      <module name="spring-framework-projects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spring_08_53_66_jdbc.jdbc_57.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TransactionListenerApplication">
     <configuration name="JdbcAnnotationApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="juejin.jdbc.anno.JdbcAnnotationApplication" />
       <module name="spring-framework-projects" />
@@ -189,13 +177,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="TransactionListenerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring_08_53_66_jdbc.jdbc_61.TransactionListenerApplication" />
+      <module name="spring-framework-projects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring_08_53_66_jdbc.jdbc_61.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -291,19 +294,19 @@
     <list>
       <item itemvalue="Application.TavernProfileApplication" />
       <item itemvalue="Application.JdbcAnnotationApplication (1)" />
-      <item itemvalue="Application.DeclarativeTransactionApplication" />
-      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
       <item itemvalue="Application.PropagationApplication" />
       <item itemvalue="Application.PropagationAnnApplication" />
       <item itemvalue="Application.PropagationApplication (1)" />
+      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
+      <item itemvalue="Application.TransactionListenerApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TransactionListenerApplication" />
         <item itemvalue="Application.PropagationApplication (1)" />
         <item itemvalue="Application.PropagationAnnApplication" />
         <item itemvalue="Application.PropagationApplication" />
         <item itemvalue="Application.JdbcAnnotationApplication (1)" />
-        <item itemvalue="Application.DeclarativeTransactionApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -373,7 +376,8 @@
       <workItem from="1670333715624" duration="24000" />
       <workItem from="1670411705966" duration="8754000" />
       <workItem from="1670485851270" duration="6623000" />
-      <workItem from="1670574691237" duration="10908000" />
+      <workItem from="1670574691237" duration="11210000" />
+      <workItem from="1670635569969" duration="3167000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring框架的依赖查找和依赖注入">
       <created>1667818139908</created>
@@ -592,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670588857773</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="掘金事务传播">
+      <created>1670594146860</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1670594146860</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +622,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bean的作用域以及工厂Bean" />
     <MESSAGE value="Bean的实例化方法" />
     <MESSAGE value="文件更新" />
     <MESSAGE value="生命周期的-初始化和销毁" />
@@ -636,7 +646,8 @@
     <MESSAGE value="Spring操作数据库" />
     <MESSAGE value="Spring操作事务" />
     <MESSAGE value="事务传播（多个Service中都有事务）" />
-    <option name="LAST_COMMIT_MESSAGE" value="事务传播（多个Service中都有事务）" />
+    <MESSAGE value="掘金事务传播" />
+    <option name="LAST_COMMIT_MESSAGE" value="掘金事务传播" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
