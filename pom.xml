@@ -10,6 +10,7 @@
     <modules>
         <module>spring-web</module>
         <module>spring-web-mvc</module>
+        <module>spring-web-mvc-dao</module>
     </modules>
 
     <properties>
