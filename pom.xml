@@ -11,6 +11,9 @@
         <module>spring-web</module>
         <module>spring-web-mvc</module>
         <module>spring-web-mvc-dao</module>
+        <module>spring-junit</module>
+        <module>spring-springDataJPA</module>
+        <module>spring-Mybatis</module>
     </modules>
 
     <properties>
@@ -87,6 +90,19 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.20</version>
+        </dependency>
+        <!-- scope 都是 test ，因为编译、部署等情况下不需要这些依赖。-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.framework.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

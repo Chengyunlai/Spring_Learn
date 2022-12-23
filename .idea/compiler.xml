@@ -7,9 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-web" />
+        <module name="spring-springDataJPA" />
         <module name="spring-web-mvc-dao" />
         <module name="spring-web-mvc" />
+        <module name="spring-web" />
+        <module name="spring-junit" />
+        <module name="spring-Mybatis" />
       </profile>
     </annotationProcessing>
   </component>

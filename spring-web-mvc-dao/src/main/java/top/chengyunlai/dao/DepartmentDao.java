@@ -54,7 +54,7 @@ public class DepartmentDao {
 
     public Department findById(String id) {
         List<Department> departments = jdbcTemplate
-                .queryForList("select * from tbl_dept where id = ?", Department.class, id);
+                .query("select * from tbl_dept where id = ?", new BeanPropertyRowMapper<>(Department.class), id);
         return departments.size() > 0 ? departments.get(0) : null;
     }
 }

@@ -35,9 +35,9 @@ public class UserDao {
         params.add(user.getName());
         params.add(user.getBirthday());
         params.add(user.getDepartment().getId());
-        if (user.getPhoto() != null) {
+        if (user.getPhotoFile() != null) {
             sql.append(", photo = ?");
-            params.add(user.getPhoto());
+            params.add(user.getPhotoFile());
         }
         sql.append(" where id = ?");
         params.add(user.getId());
@@ -67,7 +67,7 @@ public class UserDao {
             user.setUsername(rs.getString("username"));
             user.setName(rs.getString("name"));
             user.setBirthday(rs.getDate("birthday"));
-            user.setPhoto(lobHandler.getBlobAsBytes(rs, "photo"));
+            user.setPhotoFile(lobHandler.getBlobAsBytes(rs, "photo"));
             Department department = new Department();
             department.setId(rs.getString("dept_id"));
             department.setName(rs.getString("dept_name"));

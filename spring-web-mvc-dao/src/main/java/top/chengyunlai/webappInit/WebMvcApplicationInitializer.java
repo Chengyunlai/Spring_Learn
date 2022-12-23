@@ -1,8 +1,8 @@
 package top.chengyunlai.webappInit;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+import top.chengyunlai.config.EnableWebMvcConfiguration;
 import top.chengyunlai.config.RootConfiguration;
-import top.chengyunlai.config.WebMvcConfiguration;
 
 /**
  * @ClassName
@@ -20,7 +20,7 @@ public class WebMvcApplicationInitializer extends AbstractAnnotationConfigDispat
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] {WebMvcConfiguration.class};
+        return new Class[] {EnableWebMvcConfiguration.class};
     }
 
     @Override
