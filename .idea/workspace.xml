@@ -9,61 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="SpringMVC+Spring的两种方式（XML和注解版）">
-      <change afterPath="$PROJECT_DIR$/.idea/fastRequestCollection.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fastRequestCurrentProjectConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-Mybatis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/bean/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/dao/DepartmentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/mapper/DepartmentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/resources/SqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/resources/mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/resources/top/chengyunlai/mapper/DepartmentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-Mybatis/src/test/java/top/chengyunlai/dao/DepartmentDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-Mybatis/src/test/java/top/chengyunlai/mapper/DepartmentMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-junit/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-junit/src/main/java/top/chengyunlai/bean/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-junit/src/main/java/top/chengyunlai/config/JunitConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-junit/src/test/java/top/chengyunlai/bean/CatTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-springDataJPA/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-springDataJPA/src/main/java/top/chengyunlai/bean/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-springDataJPA/src/main/java/top/chengyunlai/config/SpringDataJPAConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-springDataJPA/src/main/java/top/chengyunlai/dao/DepartmentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-springDataJPA/src/test/java/top/chengyunlai/dao/DepartmentDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/aspect/Aspect404.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/aspect/ConversionBinderAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/aspect/DataModelAttributeAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/bean/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/config/EnableWebMvcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/controller/JsonDepartmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/controller/Juejin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/converter/String2DateConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/exceptionHandle/RuntimeExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/group/UserInfoGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/group/UserPasswordGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/interceptor/DemoInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/resources/userInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/resources/userList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/resources/validation-message.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/webapp/WEB-INF/pages/deptList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/webapp/WEB-INF/pages/userInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/webapp/WEB-INF/pages/userList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/test/java/top/chengyunlai/converter/String2DateConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="Spring整合">
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/Conditional/ExistCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/di/bean/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/di/bean/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/di/bean/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/proxy/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/proxy/agency/FactoryAgency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/proxy/bean/FactoryClothes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/proxy/inte/FactoryInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/proxy/invoke/ProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/juejin/di/Di.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/config/JdbcDaoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/config/JdbcDaoConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/config/RootConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/config/RootConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/controller/DepartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/controller/RestfulDepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/controller/RestfulDepartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/dao/DepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/webappInit/WebMvcApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/webappInit/WebMvcApplicationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/webapp/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/webapp/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/config/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/dao/DepartmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/mapper/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-Mybatis/src/main/resources/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/resources/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-Mybatis/src/test/java/top/chengyunlai/dao/DepartmentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-Mybatis/src/test/java/top/chengyunlai/dao/DepartmentDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/config/EnableWebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/config/EnableWebMvcConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/controller/Juejin.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/controller/Juejin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/AssemblyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/AssemblyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/anno/EnableAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/anno/EnableAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/beanDefinition/ImportBeanDefinitionRegistrarImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/beanDefinition/ImportBeanDefinitionRegistrarImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/config/AssemblyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/config/AssemblyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring_01_03_05_introduction/introduction_04_05_di/basic_dl/byName/QuickstartByNameApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_01_03_05_introduction/introduction_04_05_di/basic_dl/byName/QuickstartByNameApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,12 +48,12 @@
       <list>
         <option value="AnnotationType" />
         <option value="Mapper" />
-        <option value="spring-beans.schema" />
         <option value="Jsp File" />
-        <option value="Interface" />
         <option value="Mybatis Mapper" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -130,6 +100,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.11377778" />
     <property name="project.structure.side.proportion" value="0.22320819" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
@@ -171,7 +142,34 @@
       <recent name="spring_05_39_introduction.aop.factor" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DepartmentMapperTest.testMapperSave">
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="juejin.proxy.Application" />
+      <module name="spring-framework-projects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="juejin.proxy.inte.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AssemblyApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="juejin.assemblyModules.AssemblyApplication" />
+      <module name="spring-framework-projects" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=city" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="juejin.assemblyModules.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TavernProfileApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spring_03_14_21_upper.advance_18.TavernProfileApplication" />
       <module name="spring-framework-projects" />
@@ -186,15 +184,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,38 +206,6 @@
       <option name="PACKAGE_NAME" value="top.chengyunlai.dao" />
       <option name="MAIN_CLASS_NAME" value="top.chengyunlai.dao.DepartmentDaoTest" />
       <option name="METHOD_NAME" value="testDaoFindAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DepartmentDaoTest.testDaoSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-Mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.chengyunlai.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="top.chengyunlai.dao" />
-      <option name="MAIN_CLASS_NAME" value="top.chengyunlai.dao.DepartmentDaoTest" />
-      <option name="METHOD_NAME" value="testDaoSave" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DepartmentDaoTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-springDataJPA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.chengyunlai.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="top.chengyunlai.dao" />
-      <option name="MAIN_CLASS_NAME" value="top.chengyunlai.dao.DepartmentDaoTest" />
-      <option name="METHOD_NAME" value="testFindAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -622,22 +586,22 @@
     </configuration>
     <list>
       <item itemvalue="Application.TavernProfileApplication" />
-      <item itemvalue="Tomcat Server.spring-web" />
-      <item itemvalue="Tomcat Server.springMVC" />
-      <item itemvalue="Tomcat Server.springMVC-dao" />
-      <item itemvalue="JUnit.DepartmentDaoTest.testFindAll" />
-      <item itemvalue="JUnit.DepartmentDaoTest.testDaoSave" />
+      <item itemvalue="Application.AssemblyApplication" />
       <item itemvalue="JUnit.DepartmentDaoTest.testDaoFindAll" />
       <item itemvalue="JUnit.DepartmentMapperTest.testMapperSave" />
       <item itemvalue="JUnit.DepartmentMapperTest.testMapperFindAll" />
+      <item itemvalue="Tomcat Server.spring-web" />
+      <item itemvalue="Tomcat Server.springMVC" />
+      <item itemvalue="Tomcat Server.springMVC-dao" />
+      <item itemvalue="Application.Application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DepartmentMapperTest.testMapperSave" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.AssemblyApplication" />
         <item itemvalue="JUnit.DepartmentMapperTest.testMapperFindAll" />
+        <item itemvalue="JUnit.DepartmentMapperTest.testMapperSave" />
         <item itemvalue="JUnit.DepartmentDaoTest.testDaoFindAll" />
-        <item itemvalue="JUnit.DepartmentDaoTest.testDaoSave" />
-        <item itemvalue="JUnit.DepartmentDaoTest.testFindAll" />
       </list>
     </recent_temporary>
   </component>
@@ -720,7 +684,14 @@
       <workItem from="1671610619792" duration="9941000" />
       <workItem from="1671679209646" duration="5705000" />
       <workItem from="1671685767352" duration="13055000" />
-      <workItem from="1671763560564" duration="9947000" />
+      <workItem from="1671763560564" duration="13230000" />
+      <workItem from="1671974193526" duration="4646000" />
+      <workItem from="1672040615917" duration="1687000" />
+      <workItem from="1672118505894" duration="2565000" />
+      <workItem from="1672450832330" duration="10482000" />
+      <workItem from="1672546333431" duration="7905000" />
+      <workItem from="1672591350596" duration="1120000" />
+      <workItem from="1672650407301" duration="3430000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring框架的依赖查找和依赖注入">
       <created>1667818139908</created>
@@ -988,7 +959,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671424481267</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Spring整合">
+      <created>1671776930084</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1671776930084</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1007,7 +985,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="利用注解的方式读取Properties" />
     <MESSAGE value="自定义资源管理" />
     <MESSAGE value="PropertySource读取yml，xml，properties外部属性文件" />
     <MESSAGE value="掘金：了解bean的生命周期及生命周期函数" />
@@ -1032,7 +1009,8 @@
     <MESSAGE value="SpringMVC" />
     <MESSAGE value="模块装配和条件装配" />
     <MESSAGE value="RestFul" />
-    <option name="LAST_COMMIT_MESSAGE" value="RestFul" />
+    <MESSAGE value="Spring整合" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring整合" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

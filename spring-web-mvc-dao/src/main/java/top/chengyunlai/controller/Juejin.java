@@ -3,6 +3,7 @@ package top.chengyunlai.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -26,12 +27,14 @@ public class Juejin {
     }
 
     @GetMapping("/error")
-    public String to404(){
-        return "/userInfo";
+    @ResponseBody
+    public String to404(HttpServletResponse response){
+        response.setContentType("text/html;charset=UTF-8");
+        return "你好";
     }
 
     @GetMapping("/list2")
     public void toList2(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.sendRedirect(request.getContextPath() + "/userInfo.jsp");
+        response.sendRedirect(request.getContextPath() + "/juejin/error");
     }
 }

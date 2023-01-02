@@ -2,7 +2,6 @@ package top.chengyunlai.dao;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
-import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import top.chengyunlai.bean.Department;
@@ -21,8 +20,8 @@ public class DepartmentDao {
     @Autowired
     SqlSessionFactory sqlSessionFactory;
 
-    @Autowired
-    SqlSessionTemplate sqlSessionTemplate;
+    // @Autowired
+    // SqlSessionTemplate sqlSessionTemplate;
 
 
     public void save(Department department) {
@@ -30,7 +29,7 @@ public class DepartmentDao {
         // try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
         //     sqlSession.insert("dept.save", department);
         // }
-        sqlSessionTemplate.insert("dept.save",department);
+        // sqlSessionTemplate.insert("dept.save",department);
     }
 
     public List<Department> findAll() {

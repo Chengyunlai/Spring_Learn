@@ -32,19 +32,12 @@
         </dependency>
 
         <!--依赖查找的使用-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>5.2.8.RELEASE</version>
-        </dependency>
-
         <!--4.Spring的DI的使用-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.2.8.RELEASE</version>
         </dependency>
-        <!--4.Spring的DI的使用-->
 
         <!--Spring解析YML-->
         <dependency>

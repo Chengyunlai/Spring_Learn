@@ -8,7 +8,6 @@
     </typeAliases>
 
     <mappers>
-        <mapper resource="mapper.xml"/>
-        <mapper resource="top/chengyunlai/mapper/DepartmentMapper.xml"/>
+        <package name="top.chengyunlai.mapper"/>
     </mappers>
 </configuration>

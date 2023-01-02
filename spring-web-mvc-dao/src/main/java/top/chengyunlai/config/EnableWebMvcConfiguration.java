@@ -4,6 +4,8 @@ import org.hibernate.validator.HibernateValidator;
 import org.springframework.context.annotation.*;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.format.FormatterRegistry;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Validator;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
@@ -13,6 +15,9 @@ import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import top.chengyunlai.converter.String2DateConverter;
 import top.chengyunlai.interceptor.DemoInterceptor;
+
+import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 /**
  * @ClassName
@@ -68,5 +73,16 @@ public class EnableWebMvcConfiguration implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         // 添加自定义的拦截器 以及 拦截的路径
         registry.addInterceptor(new DemoInterceptor()).addPathPatterns("");
+    }
+
+    @Bean
+    public HttpMessageConverter<String> responseBodyConverter() {
+        return new StringHttpMessageConverter(StandardCharsets.UTF_8);
+    }
+
+    @Override
+    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+        WebMvcConfigurer.super.configureMessageConverters(converters);
+        converters.add(responseBodyConverter());
     }
 }

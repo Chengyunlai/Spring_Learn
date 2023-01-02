@@ -1,6 +1,5 @@
 package spring_01_03_05_introduction.introduction_04_05_di.basic_dl.byName;
 
-import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import spring_01_03_05_introduction.introduction_04_05_di.basic_dl.byName.bean.Person;
 
@@ -13,8 +12,8 @@ import spring_01_03_05_introduction.introduction_04_05_di.basic_dl.byName.bean.P
  **/
 public class QuickstartByNameApplication {
     public static void main(String[] args) throws Exception {
-        BeanFactory factory = new ClassPathXmlApplicationContext("introduction/quickstart-byname.xml");
-        Person person = (Person) factory.getBean(Person.class);
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("introduction/quickstart-byname.xml");
+        Person person = (Person) context.getBean(Person.class);
         System.out.println(person);
     }
 }
