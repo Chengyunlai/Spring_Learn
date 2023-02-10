@@ -9,31 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="Spring整合">
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/Conditional/ExistCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/di/bean/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/di/bean/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/di/bean/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/proxy/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/proxy/agency/FactoryAgency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/proxy/bean/FactoryClothes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/proxy/inte/FactoryInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/juejin/proxy/invoke/ProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/juejin/di/Di.xml" afterDir="false" />
+    <list default="true" id="a4612d10-9966-4c1a-9f8a-68106e0d5492" name="Default Changelist" comment="掘金代理类的文章">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/config/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/dao/DepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/java/top/chengyunlai/mapper/DepartmentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-Mybatis/src/main/resources/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-Mybatis/src/main/resources/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-Mybatis/src/test/java/top/chengyunlai/dao/DepartmentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-Mybatis/src/test/java/top/chengyunlai/dao/DepartmentDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/config/EnableWebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/config/EnableWebMvcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/controller/Juejin.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-mvc-dao/src/main/java/top/chengyunlai/controller/Juejin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/AssemblyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/AssemblyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/anno/EnableAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/anno/EnableAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/beanDefinition/ImportBeanDefinitionRegistrarImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/beanDefinition/ImportBeanDefinitionRegistrarImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/config/AssemblyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juejin/assemblyModules/config/AssemblyConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_01_03_05_introduction/introduction_04_05_di/basic_dl/byName/QuickstartByNameApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_01_03_05_introduction/introduction_04_05_di/basic_dl/byName/QuickstartByNameApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,22 +65,17 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-web-mvc-dao/src/main/resources" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.11377778" />
-    <property name="project.structure.side.proportion" value="0.22320819" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "d4a8c9af053522ecd3f983df141ef1ee",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="juejin.autowrite" />
@@ -180,17 +153,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -587,13 +549,13 @@
     <list>
       <item itemvalue="Application.TavernProfileApplication" />
       <item itemvalue="Application.AssemblyApplication" />
+      <item itemvalue="Application.Application" />
       <item itemvalue="JUnit.DepartmentDaoTest.testDaoFindAll" />
       <item itemvalue="JUnit.DepartmentMapperTest.testMapperSave" />
       <item itemvalue="JUnit.DepartmentMapperTest.testMapperFindAll" />
       <item itemvalue="Tomcat Server.spring-web" />
       <item itemvalue="Tomcat Server.springMVC" />
       <item itemvalue="Tomcat Server.springMVC-dao" />
-      <item itemvalue="Application.Application" />
     </list>
     <recent_temporary>
       <list>
@@ -691,7 +653,13 @@
       <workItem from="1672450832330" duration="10482000" />
       <workItem from="1672546333431" duration="7905000" />
       <workItem from="1672591350596" duration="1120000" />
-      <workItem from="1672650407301" duration="3430000" />
+      <workItem from="1672650407301" duration="4105000" />
+      <workItem from="1672815551857" duration="610000" />
+      <workItem from="1672845543078" duration="1483000" />
+      <workItem from="1672887905296" duration="465000" />
+      <workItem from="1673144247816" duration="1110000" />
+      <workItem from="1673232220135" duration="764000" />
+      <workItem from="1676043238017" duration="380000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring框架的依赖查找和依赖注入">
       <created>1667818139908</created>
@@ -966,7 +934,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671776930084</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="掘金代理类的文章">
+      <created>1672661326090</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1672661326090</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -982,10 +957,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="自定义资源管理" />
     <MESSAGE value="PropertySource读取yml，xml，properties外部属性文件" />
     <MESSAGE value="掘金：了解bean的生命周期及生命周期函数" />
     <MESSAGE value="Enviroment学习；BeanDefinition学习；BeanDefinitionRegistry 学习" />
@@ -1010,7 +983,8 @@
     <MESSAGE value="模块装配和条件装配" />
     <MESSAGE value="RestFul" />
     <MESSAGE value="Spring整合" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring整合" />
+    <MESSAGE value="掘金代理类的文章" />
+    <option name="LAST_COMMIT_MESSAGE" value="掘金代理类的文章" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
