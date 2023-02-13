@@ -1,11 +1,9 @@
 package top.chengyunlai.bean;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.Set;
+import java.util.Date;
 
 /**
  * @ClassName
@@ -15,16 +13,16 @@ import java.util.Set;
  * @Version 1.0
  **/
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @ToString
-public class Department {
+public class User {
     private String id;
 
     private String name;
 
-    private String tel;
+    private Integer age;
 
-    // 一对多
-    private Set<User> users;
+    private Date birthday;
+
+    // 多对一
+    private Department department;
 }

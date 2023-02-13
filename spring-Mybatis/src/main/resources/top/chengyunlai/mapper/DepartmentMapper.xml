@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="top.chengyunlai.mapper.DepartmentMapper">
+    <resultMap id="userMap" type="top.chengyunlai.bean.Department">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="tel" column="tel"/>
+        <!--一对多-->
+        <collection property="users" ofType="top.chengyunlai.bean.User"
+                    select="top.chengyunlai.mapper.UserMapper.findAllByDepartmentId" column="id"/>
+    </resultMap>
+
     <insert id="save" parameterType="top.chengyunlai.bean.Department">
         insert into tbl_department (id, name, tel) values (#{id}, #{name}, #{tel});
     </insert>
 
-    <select id="findAll" resultType="top.chengyunlai.bean.Department">
+    <select id="findAll" resultMap="userMap">
         select * from tbl_department;
+    </select>
+    <select id="findById" resultType="top.chengyunlai.bean.Department" parameterType="string">
+        SELECT * FROM tbl_department
+        WHERE id = #{id}
     </select>
 </mapper>

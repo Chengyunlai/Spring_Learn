@@ -19,4 +19,6 @@ public interface DepartmentMapper {
     void save(Department department);
 
     List<Department> findAll();
+
+    Department findById(String id);
 }
